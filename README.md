@@ -7,7 +7,7 @@ This project is an E2E test automation framework designed for testing the functi
 
 To use this framework, make sure you have Node.js installed. You can download Node.js from the official website:
 https://nodejs.org/en/
----
+
 **_Steps to install_**
 
 1. Clone the repository: git clone <your-repository-url>
@@ -40,7 +40,7 @@ Before committing changes, ensure your code is properly formatted using the foll
 - npm run format
 
 
-  **_Project structure_**
+**_Project structure_**
 ```
 .
 ├── fixtures/              # Contains extended test setup with reusable components
