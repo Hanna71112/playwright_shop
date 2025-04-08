@@ -1,0 +1,25 @@
+{
+  "dependencies": {
+    "@cucumber/cucumber": "^11.1.1",
+    "dotenv": "^16.4.7",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.7.2"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.51.1",
+    "allure-commandline": "^2.33.0",
+    "allure-playwright": "^3.2.1",
+    "fs-extra": "^11.3.0",
+    "husky": "^8.0.0",
+    "playwright": "^1.49.1",
+    "prettier": "^3.5.3",
+    "rimraf": "^6.0.1"
+  },
+  "scripts": {
+    "clean-allure": "node -e \"require('fs').rmSync('./allure-results', { recursive: true, force: true }); require('fs').rmSync('./allure-report', { recursive: true, force: true });\"",
+    "test": "npm run clean-allure && npx playwright test",
+    "format": "prettier --write \"**/*.ts\"",
+    "check-format": "prettier --check \"**/*.ts\"",
+    "prepare": "husky install"
+  }
+}
